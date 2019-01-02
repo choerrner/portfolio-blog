@@ -1,0 +1,181 @@
+
+
+html, body{
+	height: 80%;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	text-align: center;
+}
+
+
+.banner h1 {
+	font-size: 40px;
+	margin: 5px;
+	padding: 5px;
+	font-family: Arial, sans-serif;
+	mix-blend-mode: screen;
+	background-color: white;
+	width:300px;
+}
+
+.banner {
+	background-image: url("file:///Users/carol/Desktop/portfolio/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 350px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+#frontmenu a {
+	color: #363d7d;
+	text-decoration: none;
+	text-align: center;
+	padding: 6px 20px;
+	margin: 5px;
+	border-bottom: 1px solid #efefef;
+	width: 50px;
+}
+
+#frontmenu {
+	margin: 3px 0px 0px 0px;
+	padding:3px;
+}
+
+.header {
+ 	background-image: url("file:///Users/carol/Desktop/portfolio/background.jpg");  
+        background-repeat: no-repeat;
+        background-position: center;
+	padding: 5px;
+	height: 115px;
+	min-width: 300px;
+}
+
+.header h1 a {
+	text-decoration: none;
+	color: white;
+	font-family: baskerville;
+}
+
+.nav a {
+	display: block;
+	padding: 6px 16px;
+	text-decoration: none;
+	text-align: left;
+	float: left;
+	color: black;
+	background-color: white;
+	opacity: .5;
+
+}
+
+
+.nav a:hover {
+	opacity: 1;
+}
+
+
+.content {
+	padding: 10%;
+	flex: 1 1 80%;
+	height: 100%;
+	justify-content: center;
+}
+
+
+.portfolio {
+	display: grid;
+	height: 100%;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 20px;
+	min-width: 500px;
+}
+
+.portfolio-item {
+	background-color: #638aac;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio-item:hover{
+	opacity: .5;
+}
+
+.portfolio-item.smallA {
+	grid-row: span 2;
+}
+
+.portfolio-item.smallB {
+	grid-column: span 2;
+}
+
+.portfolio-item.largeA {
+	grid-row: span 3;
+	grid-column: span 2;
+}
+
+.portfolio-item.largeB {
+	grid-row: span 4;
+	grid-column: span 2;
+}
+
+.portfolio-item.mediumA {
+	grid-row: span 3;
+}
+
+.portfolio-item.mediumB {
+	grid-row: span 2;
+	grid-column: span 2;
+}
+
+#picture {
+	padding: 40px 20px;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#pichere {
+	background-color: #638aac;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	width: 150px;
+	height: 150px;
+}
+
+#description {
+	width: 500px;
+	padding: 10px;
+	display: inline-block;
+}
+
+#aboutContent {
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	text-align: center;
+	min-width: 400px;
+}
+
+#contactContent {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#contactInfo {
+	padding: 10px;
+	background-color: #a4c6e3;
+}
